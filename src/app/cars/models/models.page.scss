@@ -1,0 +1,16 @@
+ion-card{
+    justify-content: center;
+    margin:10px;
+    bottom: 15px;
+    top: 15px;
+    margin: 0 auto;
+   
+}
+ion-card-header{
+    transition: all 0.5s ease-in-out;
+    --background: linear-gradient(to bottom, #2b87a3, #000000);
+    color: #fff;
+}
+ion-toolbar{
+    --background:#fff
+}

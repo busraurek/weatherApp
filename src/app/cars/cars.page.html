@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cars</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <img src="../../assets/{{data?.image}}" class="img">
+  <ion-row>
+    <ion-col size="6" *ngFor="let model of data?.models">
+      <ion-card routerLink="models/{{model.url}}">
+        <ion-card-header>
+          <h4>
+            {{model?.name}}-{{model.year}}
+          </h4>
+        </ion-card-header>
+        <ion-card-content>
+          <h2> <b> Price: {{model.price}}$
+            </b></h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

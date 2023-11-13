@@ -1,0 +1,34 @@
+<ion-buttons>
+  <ion-menu-button></ion-menu-button>
+</ion-buttons>
+<ion-content>
+  <div id="map-container"></div>
+  <ion-card>
+    <ion-card-header>
+      <ion-title> {{ data?.name }} </ion-title>
+    </ion-card-header>
+    <ion-item>
+      <p><b>Color:</b> {{ data?.color }}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Fuel type:</b> {{ data?.fuelType }}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Engine size:</b> {{ data?.engineSize }}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Transmission:</b> {{ data?.transmission }}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Mileage:</b> {{ data?.mileage }}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Price:</b> ${{ data?.price }}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Location:</b> {{data?.location}}</p>
+    </ion-item>
+  </ion-card>
+
+  <div id="map" style="height: 300px;"></div>
+</ion-content>

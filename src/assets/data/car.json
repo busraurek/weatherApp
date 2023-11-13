@@ -1,0 +1,291 @@
+{
+  "address": {
+    "coordinate": {
+      "lat": 36.90812,
+      "lon": 30.69556
+    }
+  },
+  "brands": [
+    {
+      "name": "Toyota",
+      "image": "corolla.jpg",
+      "url": "toyota",
+      "models": [
+        {
+          "name": "Corolla",
+          "url": "corolla",
+          "year": 2022,
+          "color": "Silver",
+          "fuelType": "Petrol",
+          "engineSize": "1.8L",
+          "transmission": "Automatic",
+          "mileage": 15000,
+          "price": 25000,
+          "location": "Istanbul, Turkey",
+          "lat": 41.0082,
+          "lon": 28.9784,
+          "features": [
+            {
+              "name": "GPS Navigation",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Leather Seats",
+              "status": "installed",
+              "color": "success"
+            }
+          ]
+        },
+        {
+          "name": "Camry",
+          "url": "camry",
+          "year": 2023,
+          "color": "White",
+          "fuelType": "Hybrid",
+          "engineSize": "2.5L",
+          "transmission": "Automatic",
+          "mileage": 8000,
+          "price": 28000,
+          "location": "Los Angeles, CA",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "features": [
+            {
+              "name": "Apple CarPlay",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Android Auto",
+              "status": "installed",
+              "color": "success"
+            }
+          ]
+        },
+        {
+          "name": "Auris",
+          "url": "auris",
+          "year": 2023,
+          "color": "White",
+          "fuelType": "Hybrid",
+          "engineSize": "2.5L",
+          "transmission": "Automatic",
+          "mileage": 8000,
+          "price": 28000,
+          "location": "Los Angeles, CA",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "features": [
+            {
+              "name": "Apple CarPlay",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Android Auto",
+              "status": "installed",
+              "color": "success"
+            }
+          ]
+        },
+        {
+          "name": "Yaris",
+          "url": "yaris",
+          "year": 2023,
+          "color": "White",
+          "fuelType": "Hybrid",
+          "engineSize": "2.5L",
+          "transmission": "Automatic",
+          "mileage": 8000,
+          "price": 28000,
+          "location": "Los Angeles, CA",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "features": [
+            {
+              "name": "Apple CarPlay",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Android Auto",
+              "status": "installed",
+              "color": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tesla",
+      "image": "tesla.jpg",
+      "url": "tesla",
+      "models": [
+        {
+          "name": "Model S",
+          "url": "model-s",
+          "year": 2023,
+          "color": "White",
+          "fuelType": "Electric",
+          "engineSize": "Electric Motor",
+          "transmission": "Automatic",
+          "mileage": 5000,
+          "price": 75000,
+          "location": "Los Angeles, CA",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "features": [
+            {
+              "name": "Premium Interior",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Enhanced Autopilot",
+              "status": "not-installed",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "name": "Model X",
+          "url": "model-x",
+          "year": 2023,
+          "color": "White",
+          "fuelType": "Electric",
+          "engineSize": "Electric Motor",
+          "transmission": "Automatic",
+          "mileage": 5000,
+          "price": 75000,
+          "location": "Los Angeles, CA",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "features": [
+            {
+              "name": "Premium Interior",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Enhanced Autopilot",
+              "status": "not-installed",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "name": "Model 3",
+          "url": "model-3",
+          "year": 2023,
+          "color": "White",
+          "fuelType": "Electric",
+          "engineSize": "Electric Motor",
+          "transmission": "Automatic",
+          "mileage": 5000,
+          "price": 75000,
+          "location": "Los Angeles, CA",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "features": [
+            {
+              "name": "Premium Interior",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Enhanced Autopilot",
+              "status": "not-installed",
+              "color": "danger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hyundai",
+      "image": "hyundai.jpg",
+      "url": "hyundai",
+      "models": [
+        {
+          "name": "i20",
+          "url": "i20",
+          "year": 2023,
+          "color": "Red Multi-Coat",
+          "fuelType": "Petrol",
+          "engineSize": "1.97L",
+          "transmission": "Manuel",
+          "mileage": 5000,
+          "price": 100000,
+          "location": "New York, USA",
+          "lat": 40.7128,
+          "lon": -74.0060,
+          "features": [
+            {
+              "name": "Premium Interior",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Enhanced Autopilot",
+              "status": "not-installed",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "name": "i10",
+          "url": "i10",
+          "year": 2023,
+          "color": "Red Multi-Coat",
+          "fuelType": "Petrol",
+          "engineSize": "1.97L",
+          "transmission": "Manuel",
+          "mileage": 5000,
+          "price": 100000,
+          "location": "New York, USA",
+          "lat": 34.0522,
+          "lon": -74.2437,
+          "features": [
+            {
+              "name": "Premium Interior",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Enhanced Autopilot",
+              "status": "not-installed",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "name": "Elantra",
+          "url": "elantra",
+          "year": 2023,
+          "color": "Red Multi-Coat",
+          "fuelType": "Petrol",
+          "engineSize": "1.97L",
+          "transmission": "Manuel",
+          "mileage": 5000,
+          "price": 100000,
+          "location": "New York, USA",
+          "lat": 34.0522,
+          "lon": -74.2437,
+          "features": [
+            {
+              "name": "Premium Interior",
+              "status": "installed",
+              "color": "success"
+            },
+            {
+              "name": "Enhanced Autopilot",
+              "status": "not-installed",
+              "color": "danger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
