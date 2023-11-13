@@ -6,7 +6,7 @@
           <ion-list>
             <ion-list-header>
               <ion-note>
-                Welcome
+                {{'baslik' |translate}}
               </ion-note>
             </ion-list-header>
             <ion-item *ngFor="let brand of data?.brands" lines="none" routerLink="cars/{{brand.url}}">
@@ -15,6 +15,18 @@
           </ion-list>
 
         </ion-menu-toggle>
+        <ion-item lines="none">
+          <ion-img style="width: 30px;" slot="end" [src]="selectedLanguage">
+          </ion-img>
+          <ion-select interface="popover" toggleIcon="" label="{{'seçenek' | translate}}"
+            (ionChange)="changeLanguage($event)  ">
+            <ion-select-option *ngFor="let option of languageOptions" [value]="option.code">
+
+              <ion-img src="../../assets/flags/de.png"></ion-img>
+              {{ option.name }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

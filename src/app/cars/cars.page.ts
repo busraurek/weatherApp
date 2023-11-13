@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../services/data.service';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslationService } from './../services/translation.service';
 @Component({
   selector: 'app-cars',
   templateUrl: './cars.page.html',
@@ -11,13 +13,29 @@ export class CarsPage implements OnInit {
   data : any
   brandName: any;
   brand:  any;
-  constructor(private activatedRoute: ActivatedRoute, private dataService: DataService, private router : Router) { }
+
+  selectedLanguage: any;
+  title : any;
+  priceLabel: any;
+
+  constructor(
+    private activatedRoute: ActivatedRoute, 
+    private dataService: DataService, 
+    private translate : TranslateService,
+    private translation: TranslationService
+    ) {
+   
+   }
+
 
   ngOnInit() {
     this.carUrl = this.activatedRoute.snapshot.paramMap.get('carId') as string;
     console.log(this.carUrl, 'url')
     this.getData();
 
+    
+
+   
   } 
   getData() {
     this.dataService.getData().subscribe((data: any) => {

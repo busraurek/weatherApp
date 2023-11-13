@@ -19,7 +19,7 @@ export class ModelsPage implements OnInit {
   constructor(  
     private activatedRoute: ActivatedRoute,
     private dataService: DataService,
-    private router : Router
+   
    ) { }
 
   ngOnInit() {
