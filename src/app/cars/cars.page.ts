@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../services/data.service';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationService } from './../services/translation.service';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-cars',
   templateUrl: './cars.page.html',
@@ -18,25 +19,29 @@ export class CarsPage implements OnInit {
   title : any;
   priceLabel: any;
 
+  private languageChangeSubscription: Subscription;
+
   constructor(
     private activatedRoute: ActivatedRoute, 
     private dataService: DataService, 
     private translate : TranslateService,
     private translation: TranslationService
     ) {
-   
+      this.languageChangeSubscription = this.translation.getLanguageChangeObservable().subscribe(() => {
+        this.updateTranslations();
+      });
    }
-
 
   ngOnInit() {
     this.carUrl = this.activatedRoute.snapshot.paramMap.get('carId') as string;
     console.log(this.carUrl, 'url')
     this.getData();
-
-    
-
-   
+    this.updateTranslations(); 
   } 
+
+  ngOnDestroy() {
+    this.languageChangeSubscription.unsubscribe(); 
+  }
   getData() {
     this.dataService.getData().subscribe((data: any) => {
       console.log('Received data:', data);
@@ -48,8 +53,12 @@ export class CarsPage implements OnInit {
         console.error('Invalid data structure:', data);
       }
     });
-  }
-  
-  
 
+   
+  }
+  private updateTranslations() {
+    this.translate.get('CARS_PAGE.TITLE').subscribe((title) => {
+      this.title = title;
+    }); }
+  
 }

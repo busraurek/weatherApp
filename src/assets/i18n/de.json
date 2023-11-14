@@ -1,6 +1,26 @@
 {
+    "CARS_PAGE": {
+        "title": "Autos",
+        "price_label": "Preis",
+        "text": "Das neueste Modell Auto ist schnell, sicher, komfortabel und luxuriös."
+    },
+    "MODELS_PAGE": {
+        "title": "Modelle",
+        "color": "Farbe",
+        "fuel_type": "Kraftstoffart",
+        "engine_size": "Motorgröße",
+        "transmission": "Getriebe",
+        "mileage": "Kilometerstand",
+        "price": "Preis",
+        "location": "Ort"
+    },
+    "LOGIN_PAGE": {
+        "username": "Nutzername",
+        "password": "Passwort",
+        "login": "Anmeldung",
+        "note1": "Benutzername wird benötigt",
+        "note2": "Passwort wird benötigt"
+    },
     "baslik": "Wilkommen!",
-    "seçenek": "Auswahl",
-    "title": "",
-    "price": ""
+    "seçenek": "Sprache"
 }

@@ -1,16 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
   <div class="container">
 
     <div class="centered-content">
       <div class="content">
         <div class="text-container">
-          <h2>Login</h2>
+          <h2>Lorem</h2>
         </div>
       </div>
     </div>
@@ -23,9 +17,9 @@
           </div>
           <div>
             <input labelPlacement="floating" type="text" formControlName="username" name="username" required
-              placeholder="Username" class="input" />
+              placeholder="{{'LOGIN_PAGE.username' | translate}}" class="input" />
             <div *ngIf="(username.dirty || username.touched) && username.errors" class="errors">
-              <span *ngIf="username.errors?.required">Username is required</span>
+              <span *ngIf="username.errors?.required">{{'LOGIN_PAGE.note1' | translate}}</span>
             </div>
           </div>
         </div>
@@ -36,14 +30,14 @@
           </div>
           <div>
             <input labelPlacement="floating" type="password" formControlName="password" name="password" required
-              class="input" placeholder="Password" />
+              class="input" placeholder="{{'LOGIN_PAGE.password' | translate}}" />
             <div *ngIf="(password.dirty || password.touched) && password.errors && password.errors" class="errors">
-              <span *ngIf="password.errors?.required">Password is required</span>
+              <span *ngIf="password.errors?.required">{{'LOGIN_PAGE.note2' | translate}}</span>
             </div>
           </div>
         </div>
 
-        <button [disabled]="!credentials.valid" type="submit" class="btn">Login</button>
+        <button [disabled]="!credentials.valid" type="submit" class="btn">{{'LOGIN_PAGE.login' |translate}}</button>
 
       </form>
     </div>

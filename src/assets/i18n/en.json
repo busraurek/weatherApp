@@ -1,8 +1,26 @@
 {
-    "baslik": "Welcome!",
-    "seçenek": "Options",
     "CARS_PAGE": {
-        "TITLE": "Cars",
-        "PRICE_LABEL": "Price"
-    }
+        "title": "Cars",
+        "price_label": "Price",
+        "text": "The latest model car is fast, safe, comfortable, and luxurious."
+    },
+    "MODELS_PAGE": {
+        "title": "Models",
+        "color": "Color",
+        "fuel_type": "Fuel Type",
+        "engine_size": "Engine Size",
+        "transmission": "Transmission",
+        "mileage": "Mileage",
+        "price": "Price",
+        "location": "Location"
+    },
+    "LOGIN_PAGE": {
+        "username": "Username",
+        "password": "Password",
+        "login": "Login",
+        "note1": "Username is required",
+        "note2": "Password is required"
+    },
+    "baslik": "Welcome!",
+    "seçenek": "Languages"
 }

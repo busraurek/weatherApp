@@ -3,23 +3,23 @@
     <ion-buttons>
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ 'CARS_PAGE.TITLE' | translate }}</ion-title>
+    <ion-title>{{ 'CARS_PAGE.title' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-text-center">
-  <img src="../../assets/{{data?.image}}" class="img">
+
   <ion-row>
+    <img src="../../assets/{{data?.image}}" class="img">
     <ion-col size="6" *ngFor="let model of data?.models">
       <ion-card routerLink="models/{{model.url}}">
         <ion-card-header>
-          <h4>
-            {{model?.name}}-{{model.year}}
-          </h4>
+          {{model?.name}}-{{model.year}}
         </ion-card-header>
         <ion-card-content>
-          <h2> <b> Price : {{model.price}}$
-            </b></h2>
+          <p>{{'CARS_PAGE.text' | translate}}</p>
+          <b> {{ 'CARS_PAGE.price_label' | translate }} : {{model.price}}$
+          </b>
         </ion-card-content>
       </ion-card>
     </ion-col>

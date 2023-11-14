@@ -13,6 +13,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { TranslationService } from './services/translation.service';
+import { CarsPageModule } from './cars/cars.module';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json'); 
@@ -20,7 +21,7 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule, TranslateModule.forRoot({
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule, CarsPageModule, TranslateModule.forRoot({
     loader: {
       provide: TranslateLoader,
       useFactory: createTranslateLoader,

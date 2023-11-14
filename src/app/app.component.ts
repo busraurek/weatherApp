@@ -23,6 +23,7 @@ export class AppComponent  implements OnInit{
   }
  
   ngOnInit() {
+    this.updateFlag(this.selectedLanguage);
 this.translation.getDefaultLanguage().subscribe((defaultLang : any)=> {
   this.translation.setLanguage(defaultLang);
   

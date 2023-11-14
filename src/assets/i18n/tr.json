@@ -1,8 +1,26 @@
 {
-    "baslik": "Hoşgeldiniz!",
-    "seçenek": "Seçenek",
     "CARS_PAGE": {
-        "TITLE": "Araçlar",
-        "PRICE_LABEL": "Fiyat"
-    }
+        "title": "Araçlar",
+        "price_label": "Fiyat",
+        "text": "Son model otomobil, hızlı, güvenli, konforlu ve lüks."
+    },
+    "MODELS_PAGE": {
+        "title": "Modeller",
+        "color": "Renk",
+        "fuel_type": "Yakıt Türü",
+        "engine_size": "Motor Hacmi",
+        "transmission": "Şanzıman",
+        "mileage": "Kilometre",
+        "price": "Fiyat",
+        "location": "Konum"
+    },
+    "LOGIN_PAGE": {
+        "username": "Kullanıcı Adı",
+        "password": "Parola",
+        "login": "Giriş",
+        "note1": "Kullanıcı adı girişi zorunlu",
+        "note2": "Parola girişi zorunlu"
+    },
+    "baslik": "Hoşgeldiniz!",
+    "seçenek": "Dil seçeneği"
 }

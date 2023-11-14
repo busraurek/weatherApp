@@ -1,6 +1,11 @@
-<ion-buttons>
-  <ion-menu-button></ion-menu-button>
-</ion-buttons>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'MODELS_PAGE.title' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
   <div id="map-container"></div>
   <ion-card>
@@ -8,27 +13,31 @@
       <ion-title> {{ data?.name }} </ion-title>
     </ion-card-header>
     <ion-item>
-      <p><b>Color:</b> {{ data?.color }}</p>
+      <p><b>{{ 'MODELS_PAGE.color' | translate }}:</b> {{ data?.color }}</p>
     </ion-item>
     <ion-item>
-      <p><b>Fuel type:</b> {{ data?.fuelType }}</p>
+      <p><b>{{ 'MODELS_PAGE.fuel_type' | translate }}:</b> {{ data?.fuelType }}</p>
     </ion-item>
     <ion-item>
-      <p><b>Engine size:</b> {{ data?.engineSize }}</p>
+      <p><b>{{ 'MODELS_PAGE.engine_size' | translate }}:</b> {{ data?.engineSize }}</p>
     </ion-item>
     <ion-item>
-      <p><b>Transmission:</b> {{ data?.transmission }}</p>
+      <p><b>{{ 'MODELS_PAGE.transmission' | translate }}:</b> {{ data?.transmission }}</p>
     </ion-item>
     <ion-item>
-      <p><b>Mileage:</b> {{ data?.mileage }}</p>
+      <p><b>{{ 'MODELS_PAGE.mileage' | translate }}:</b> {{ data?.mileage }}</p>
     </ion-item>
     <ion-item>
-      <p><b>Price:</b> ${{ data?.price }}</p>
+      <p><b>{{ 'MODELS_PAGE.price' | translate }}:</b> ${{ data?.price }}</p>
     </ion-item>
     <ion-item>
-      <p><b>Location:</b> {{data?.location}}</p>
+      <p><b>{{ 'MODELS_PAGE.location' | translate }}:</b> {{data?.location}}</p>
     </ion-item>
+
+    <ion-card class="map-card">
+      <div id="map" style="height: 300px; "></div>
+    </ion-card>
   </ion-card>
 
-  <div id="map" style="height: 300px;"></div>
+
 </ion-content>

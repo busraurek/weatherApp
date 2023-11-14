@@ -41,14 +41,14 @@ export class ModelsPage implements OnInit {
     }
     this.map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/navigation-day-v1',
       center: [0, 0],
       zoom: 5,
     });
 
   }
-  
   showMap() {
+   setTimeout(()=>{
     this.dataService.getData().subscribe((brandsData: any) => {
       brandsData.brands.forEach((brand: any) => {
         brand.models.forEach((model: any) => {
@@ -61,7 +61,10 @@ export class ModelsPage implements OnInit {
               this.marker.remove();
             }
 
-            this.marker = new mapboxgl.Marker()
+            
+            this.marker = new mapboxgl.Marker({
+          
+            })
               .setLngLat([model.lon, model.lat])
               .addTo(this.map);
           } else {
@@ -72,8 +75,8 @@ export class ModelsPage implements OnInit {
         });
       });
     });
+   }, 2000);
   }
-
 
   getData() {
     this.dataService.getData().subscribe((data: any) => {

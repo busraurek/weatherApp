@@ -19,7 +19,7 @@
           <ion-img style="width: 30px;" slot="end" [src]="selectedLanguage">
           </ion-img>
           <ion-select interface="popover" toggleIcon="" label="{{'seçenek' | translate}}"
-            (ionChange)="changeLanguage($event)  ">
+            (ionChange)="changeLanguage($event)">
             <ion-select-option *ngFor="let option of languageOptions" [value]="option.code">
 
               <ion-img src="../../assets/flags/de.png"></ion-img>

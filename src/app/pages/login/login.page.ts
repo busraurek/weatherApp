@@ -42,9 +42,9 @@ export class LoginPage implements OnInit {
 
   showAlert() {
     let alert = this.alertCtrl.create({
-      header: 'Login Failed',
-      message: 'Wrong credentials',
-      buttons: ['OK'],
+      header: 'Giriş Hatalı',
+      message: 'Yanlış kimlik bilgileri',
+      buttons: ['Tamam'],
     });
     alert.then((alert) => alert.present());
   }

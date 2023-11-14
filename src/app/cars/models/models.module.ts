@@ -22,13 +22,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     IonicModule,
     ModelsPageRoutingModule,
     HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
+    TranslateModule
   ],
   declarations: [ModelsPage]
 })
