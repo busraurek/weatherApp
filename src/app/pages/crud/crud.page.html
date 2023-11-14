@@ -1,0 +1,71 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            CRUD Page
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">Ürün Adı</ion-label>
+        <ion-input [(ngModel)]="newProduct.title" name="title" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Açıklama</ion-label>
+        <ion-input [(ngModel)]="newProduct.description" name="description" required></ion-input>
+    </ion-item>
+
+
+    <ion-button (click)="createProduct()">Yeni Ürün Oluştur</ion-button>
+
+    <ion-card *ngIf="createdProduct">
+        <ion-card-header>
+            Yeni Ürün
+        </ion-card-header>
+        <ion-card-content>
+            <p>Adı: {{ createdProduct.title }}</p>
+            <p>Açıklama: {{ createdProduct.description }}</p>
+
+        </ion-card-content>
+    </ion-card>
+
+    <ion-button (click)="fetchProduct(1)">Ürünü Getir</ion-button>
+
+    <ion-card *ngIf="fetchedProduct">
+        <ion-img [src]="fetchedProduct.thumbnail"></ion-img>
+        <ion-card-header>
+            {{ fetchedProduct.title }}
+        </ion-card-header>
+        <ion-card-content>
+            <p>{{ fetchedProduct.description }}</p>
+            <p>Fiyat: {{ fetchedProduct.price }} $</p>
+            <p>İndirim Oranı: {{ fetchedProduct.discountPercentage }}%</p>
+            <p>Değerlendirme: {{ fetchedProduct.rating }}</p>
+            <p>Stok: {{ fetchedProduct.stock }}</p>
+            <p>Marka: {{ fetchedProduct.brand }}</p>
+            <p>Kategori: {{ fetchedProduct.category }}</p>
+
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col *ngFor="let image of fetchedProduct.images">
+                        <ion-img [src]="image"></ion-img>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+        </ion-card-content>
+    </ion-card>
+
+
+
+    <ion-button (click)="deleteProduct(1)">Ürünü Sil</ion-button>
+
+    <ion-text *ngIf="deletedProductId">
+        Ürün (ID: {{ deletedProductId }}) silindi.
+    </ion-text>
+
+</ion-content>
